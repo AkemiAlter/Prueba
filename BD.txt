@@ -1,0 +1,53 @@
+create database personal;
+ use personal;
+create table registro (COD varchar(3) ,
+nombre varchar(20),
+apellidos varchar(50),
+Telefono varchar(10),
+fecha varchar(20));
+insert into registro values ('001','Jhonatan','Paredes Garcia','4477170','25/09/1995');
+insert into registro values ('002','Gohan','ochoa huanca','2563987','22/11/1983');
+insert into registro values ('003','Fiorella','Avalos Coloma','4477896','13/05/1990');
+insert into registro values ('004','Gabriela','Ramires Acebedo','4204450','28/02/1994');
+insert into registro values ('005','Cristian','Garcia Marcapura','447456','15/08/1993');
+insert into registro values ('006','Alonso','Guerra Elias','847456','13/01/1993');
+select * from registro;
+
+create table supervisores (COD varchar(3) ,
+ nombre varchar(20),
+ Apellidos varchar(50),
+Area varchar(20));
+
+insert into supervisores values ('01','gabriel','Achilier','Abarrtes');
+insert into supervisores values ('02','Rosa','La rumorosa','Panaderia');
+insert into supervisores values ('03','Roberto','Gomez bolaños','Verduras');
+select*from supervisores; 
+
+create table adim (COD varchar(3) ,
+ nombre varchar(20),
+ Apellidos varchar(50),
+Sucursal varchar(30));
+
+insert into adim values ('01','Carlos','Salvatierra cubas','San juan de miraflores');
+select*from adim; 
+
+
+create table diurno(COD varchar(3) ,
+nombre varchar(20),
+apellidos varchar(50),
+Telefono varchar(10),
+fecha varchar(20));
+insert into diurno values ('001','Jhonatan','Paredes Garcia','4477170','25/09/1995');
+insert into diurno values ('002','Gohan','ochoa huanca','2563987','22/11/1983');
+insert into diurno values ('003','Fiorella','Avalos Coloma','4477896','13/05/1990');
+select * from diurno;
+
+create table nocturno (COD varchar(3) ,
+nombre varchar(20),
+apellidos varchar(50),
+Telefono varchar(10),
+fecha varchar(20));
+insert into nocturno values ('004','Gabriela','Ramires Acebedo','4204450','28/02/1994');
+insert into nocturno values ('005','Cristian','Garcia Marcapura','447456','15/08/1993');
+insert into nocturno values ('006','Alonso','Guerra Elias','847456','13/01/1993');
+select * from nocturno; 
